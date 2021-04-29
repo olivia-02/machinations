@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Machinations`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Olivia Robson`,
+      summary: `- a girl from Ontario who is either watering her plants or writing code.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    description: `My first try at gatsby`,
     siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `gnocchidocchi`,
     },
   },
   plugins: [
@@ -26,6 +26,15 @@ module.exports = {
         name: `images`,
         path: `${__dirname}/src/images`,
       },
+    },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Rokkitt\:100,300,400,500,700`,
+          `Ubuntu Mono\:400,700`        ],
+        display: 'swap'
+      }
     },
     {
       resolve: `gatsby-transformer-remark`,
